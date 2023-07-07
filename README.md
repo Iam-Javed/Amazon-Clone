@@ -39,7 +39,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/Mr-J-2K01/amazon-clone.git`
 2. Navigate to the project directory: `cd amazon-clone`
-3. Open the project in your preferred code editor and my preferred is`VS Code Editor`
+3. Open the project in `VS Code Editor`
 
 ## Usage
 
