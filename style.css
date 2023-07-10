@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     font-family: Arial;
     box-sizing: border-box;
 }
@@ -16,7 +17,7 @@
     width: 100px;
 }
 .logo{
-    background: url("images/logo.png");
+    background: url("logo.png");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -29,12 +30,16 @@
     padding: 5px;
 }
 .border:hover{
-    border:1.5px solid white
+    border:1px solid white
+}
+.nav-signin:hover{
+    border: 1px solid white;
+    padding: 2px;
 }
 
 
 
-/* box2 */
+/* box1 */
 
 
 .add-first{
@@ -53,7 +58,7 @@
 
 
 
-/*box3*/
+/*box2*/
 
 
 .nav-search{
@@ -95,7 +100,7 @@
 
 
 
-/* box4 */
+/* box3 */
 
 
 span{
@@ -109,7 +114,7 @@ span{
 
 
 
-/* box5 */
+/* box4 */
 
 
 .nav-cart i {
@@ -122,40 +127,45 @@ span{
 
 
 
-/*  panel   */
 
 
-.panel{
-    height: 40px;
-    background-color: #222f3d;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: space-evenly;
+.menu-left{
+    text-align: left;
 }
-.panel-ops p{
-    display: inline;
-    margin-left: 15px;
-    cursor: pointer;
+ul li{
+    display: inline-block;
+    margin: 5px;
+    list-style: none;
 }
-
-.panel-all{
-    cursor: pointer;
-}
-.panel-ops{
-    width: 70%;
+ul li a{
+    color: #fff;
     font-size: 0.9rem;
+    text-decoration: none;
+    margin-left: 0.5rem;
 }
-.panel-deals{
-    font-size: 0.99rem;
-    font-weight: 700;
+.nav-bar{
+    background-color: #222f3d;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
-.panel-deals:hover{
+.menu-left span{
+    margin: 0 20px;
+    font-size: 28px;
     cursor: pointer;
-    border: 1px solid white;
+    display: none;
 }
+#menu i{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+
+
+
 .hero-section{
-    background: url("images/hero.jpg");
+    background: url("hero.jpg");
     background-size: cover;
     height: 350px;
     display: flex;
@@ -254,6 +264,7 @@ span{
 }
 
 
+
 /* Footer */
 
 
@@ -289,6 +300,10 @@ ul a{
     margin-top: 10px;
     color: #dddddd;
 }
+.foot-panel2 ul:hover{
+    cursor: pointer;
+}
+
 
 .foot-panel3{
     background-color: #222f3d;
@@ -299,7 +314,7 @@ ul a{
     align-items: center;
 }
 .logos{
-    background: url("images/logo.png");
+    background: url("logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;
@@ -319,4 +334,114 @@ ul a{
 }
 .copyright{
     padding-top: 5px; 
+}
+
+
+
+
+@media only screen and (max-width:700px) {
+    .box {
+        width: 47%;
+        height: 60% !important;
+        padding: 5px;
+        margin: 5px;
+        background-color: white;
+        border-radius: 2px;
+    }
+    .box h2{
+        font-size: large;
+    }
+    .menu-left span{
+        display: block;
+    }
+    .menu-left ul li{
+        display: block;
+    }
+    .menu-left ul{
+        display: none;
+    }
+    .menu-left #menu{
+        margin-bottom: 20%;
+    }
+    #menu i{
+        display: none;
+    }
+    .nav-address{
+        display: none;
+    }
+    .nav-second{
+        display: none;
+    }
+    .nav-signin p span{
+        font-size: 0.7rem;
+    }
+    .nav-return{
+        display: none;
+    }
+    .nav-cart i{
+        font-size: 20px !important;
+        margin-right: 10px;
+    }
+    .nav-cart p{
+        display: none;
+    }
+    .cart-icon {
+        display: none;
+    }
+    .nav-search{
+        width: auto !important;
+        height: 37.5px;
+        font-size: 14px;
+        margin-top: 23.5%;
+    }
+    .search-select{
+        display: none !important;
+    }
+    .search-input{
+        border-radius: 4px;
+    }
+    .search-input[placeholder="Search Amazon.in"]{
+        text-align: center;
+    }
+    .hero-section{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+    .hero-msg{
+        margin-top: 100px;
+        width: 80%;
+    }
+    .hero-msg p{
+        font-size: 0.49rem;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        padding: 2px;
+        margin-bottom: 20px;
+    }
+    .box-img{
+        height: 200px;
+        background-size: cover;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .box-content p{
+        color: #007185;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .foot-panel2 ul{
+        justify-content: space-evenly;
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 0.8rem;
+    }
+    .foot-panel2 ul a{
+        font-size: 0.7rem;
+    }
+    
 }
