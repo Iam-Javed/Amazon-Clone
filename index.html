@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Amazon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">     
@@ -38,6 +38,7 @@
             </div>
 
             <div class="nav-signin border">
+                <i class="fa fa-user" aria-hidden="true"></i>
                 <p><span>Hello, Sign in</span></p>
                 <p class="nav-second">Account & Lists</p>
             </div>
@@ -48,27 +49,21 @@
             </div>
             <div class="nav-cart border">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                Cart
+                <div class="cart-icon"> Cart</div>
             </div>
         </div>
 
 
-        <div class="panel">
-            <div class="panel-all">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                All
-            </div>
-
-            <div class="panel-ops">
-                <p>Today's Deals</p>
-                <p>Best Sellers</p>
-                <p>Mobiles</p>
-                <p>Customer Service</p>
-                <p>Amazon Pay</p>
-            </div>
-            
-            <div class="panel-deals">
-                Shop deals in Electronics
+        
+        <div class="nav-bar">
+            <div class="menu-left">
+                <span onclick="myFunction()">&#9776;</span>
+                <ul id="menu">
+                    <i class="fa fa-bars" aria-hidden="true">  All</i>
+                    <li><a href="#">Amazon miniTv</a></li><li><a href="#">Sell</a></li><li><a href="#">Best Sellers</a></li><li><a href="#">Today's Deals</a></li>
+                    <li><a href="#">Customer Reviews</a></li><li><a href="#">Mobiles</a></li><li><a href="#">New Releases</a></li><li><a href="#">Prime</a></li>
+                    <li><a href="#">Electronics</a></li><li><a href="#">Home & Kitchen</a></li><li><a href="#">Amazon Pay</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -77,80 +72,84 @@
 
     <div class="hero-section">
         <div class="hero-msg">
-            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in">Click here to go to amazon.in</a></p>
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in">Click Here to go to amazon.in</a></p>
         </div>
     </div>
 
-    <div class="shop-section1">
-        <div class="box1 box">
-            <div class="box-content">
-                <h2>Clothes</h2>
-                <div class="box-img" style="background-image: url('images/box1.jpg');"></div>
-                <p>see more</p>
-            </div>    
-        </div>
 
-        <div class="box2 box">
-            <div class="box-content">
-                <h2>Electronics</h2>
-                <div class="box-img" style="background-image: url('images/box2.jpg');"></div>
-                <p>see more</p>
-            </div> 
-        </div>
 
-        <div class="box3 box">
-            <div class="box-content">
-                <h2>Furniture</h2>
-                <div class="box-img" style="background-image: url('images/box3.jpg');"></div>
-                <p>see more</p>
+    
+    <section id="menub">
+        <div class="shop-section">
+
+            <div class="box1 box">
+                <div class="box-content">
+                    <h2>Clothes</h2>
+                    <div class="box-img" style="background-image: url('box1.jpg');"></div>
+                    <p>see more</p>
+                </div>
+            </div>
+            <div class="box1 box">
+                <div class="box-content">
+                    <h2>Electronics</h2>
+                    <div class="box-img" style="background-image: url('box2.jpg');"></div>
+                    <p>see more</p>
+                </div>
             </div>
 
-        </div>
-        
-    </div>
-    <div class="shop-section">
-        <div class="box4 box">
-            <div class="box-content">
-                <h2>Mobiles</h2>
-                <div class="box-img" style="background-image: url('images/box4.jpg');"></div>
-                <p>see more</p>
-            </div> 
+            <div class="box1 box">
+                <div class="box-content">
+                    <h2>Furniture</h2>
+                    <div class="box-img" style="background-image: url('box3.jpg');"></div>
+                    <p>see more</p>
+                </div>
+            </div>
 
-        </div>
-        <div class="box1 box">
-            <div class="box-content">
-                <h2>Beauty Picks</h2>
-                <div class="box-img" style="background-image: url('images/box5.jpg');"></div>
-                <p>see more</p>
-            </div> 
+            <div class="box1 box">
+                <div class="box-content">
+                    <h2>Mobiles</h2>
+                    <div class="box-img" style="background-image: url('box4.jpg');"></div>
+                    <p>see more</p>
+                </div>
+            </div>
 
-        </div>
-        <div class="box2 box">
-            <div class="box-content">
-                <h2>Pet Care</h2>
-                <div class="box-img" style="background-image: url('images/box6.jpg');"></div>
-                <p>see more</p>
-            </div> 
+            <div class="box5 box">
+                <div class="box-content">
+                    <h2>Beauty Picks</h2>
+                    <div class="box-img" style="background-image: url('box5.jpg');"></div>
+                    <p>see more</p>
+                </div>
+            </div>
 
-        </div>
-        <div class="box3 box">
-            <div class="box-content">
-                <h2>New Arrival Toys</h2>
-                <div class="box-img" style="background-image: url('images/box7.jpg');"></div>
-                <p>see more</p>
-            </div> 
+            <div class="box6 box">
+                <div class="box-content">
+                    <h2>Pet Care</h2>
+                    <div class="box-img" style="background-image: url('box6.jpg');"></div>
+                    <p>see more</p>
+                </div>
+            </div>
 
+            <div class="box7 box">
+                <div class="box-content">
+                    <h2>New Arrival Toys</h2>
+                    <div class="box-img" style="background-image: url('box7.jpg');"></div>
+                    <p>see more</p>
+                </div>
+            </div>
+            <div class="box8 box">
+                <div class="box-content">
+                    <h2>Discover Fashion Trends</h2>
+                    <div class="box-img" style="background-image: url('box8.jpg');"></div>
+                    <p>see more</p>
+                </div>
+            </div>
         </div>
-        <div class="box4 box">
-            <div class="box-content">
-                <h2>Discover Fashion Trends</h2>
-                <div class="box-img" style="background-image: url('images/box8.jpg');"></div>
-                <p>see more</p>
-            </div> 
+    </section>
+            
+          
 
-        </div>
-</div>
-        
+
+
     <footer>
         <div class="foot-panel1">
             Back to Top
@@ -195,6 +194,8 @@
             </ul>
         </div>
 
+
+
         <div class="foot-panel3">
             <div class="logos"></div>
         </div>
@@ -211,6 +212,24 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("menu")
+            if(x.style.display == "block")
+            {
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "block";
+            }
+        }
+        
+    </script>
+
+    
     
 </body>
 </html>
