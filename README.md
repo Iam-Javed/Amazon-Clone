@@ -31,7 +31,6 @@ The following technologies were used in the development of this project:
 - HTML: Used for creating the structure and content of web pages.
 - CSS: Used for styling the website and enhancing its visual appearance.
 - JavaScript: Used for implementing interactive features and functionality.
-- [Bootstrap](https://getbootstrap.com/): A popular CSS framework used for responsive design and pre-built UI components.
 
 ## Setup
 
