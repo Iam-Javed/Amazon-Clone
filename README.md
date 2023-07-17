@@ -52,4 +52,4 @@ Contributions to this project are welcome. If you find any issues or have sugges
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code for personal or commercial purposes.
+This project is licensed under the `MIT License`.You are free to use, modify, and distribute the code for personal or commercial purposes.
