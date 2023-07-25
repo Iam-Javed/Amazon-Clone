@@ -18,8 +18,6 @@ The Amazon Clone is a web application that mimics the popular e-commerce platfor
 
 ## Features
 
-- User authentication: Users can create accounts, log in, and log out.
-- Product catalog: Users can view a list of products available for purchase.
 - Product details: Users can click on a product to view its details, including description, price, and reviews.
 - Search functionality: Users can search for products by name or category.
 - Responsive design: The website is optimized for different screen sizes and devices.
